@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Music group - Radiohead</title>
+<style>
+:root{
+  --gutter: 50px;      
+  --left-fr: 2fr;
+  --right-fr: 1fr;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;font-family:Arial, sans-serif;}
+
+.page{
+  display:grid;
+  grid-template-columns: var(--left-fr) var(--gutter) var(--right-fr);
+  grid-template-rows: auto 1fr auto;
+  min-height:100vh;
+}
+
+.block{
+  border:1px solid #222;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  padding:16px;
+  background-clip:padding-box;
+}
+
+.block1{grid-column:1; grid-row:1; background:#e2c55c; min-height: 18vh; justify-content: space-between;}
+.block3{grid-column:1; grid-row:2; background:#ffffff;}
+.block4{grid-column:1; grid-row:3; background:#e2c55c; min-height: 18vh; justify-content: space-between;}
+
+.block1, .block4 {
+  align-items: center;
+}
+
+.gutter{
+  grid-column:2;
+  grid-row:1/4;
+  background:#ffffff;
+  border-left:1px solid #111;
+  border-right:1px solid #111;
+}
+
+.block2{grid-column:3; grid-row:1/3; background:#52b2ed;}
+.block5{grid-column:3; grid-row:3; background:#d14c4a;min-height: 18vh;}
+
+.badge{
+  background:#fff;
+  border:1px solid #333;
+  padding:6px 10px;
+  border-radius:4px;
+  font-weight:700;
+  box-shadow:0 1px 1px rgba(0,0,0,0.08);
+  width: 100px; 
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block3 p{max-width:90%; margin:8px 0; line-height:1.45;}
+
+.menu{list-style:none;padding:16px;margin:0;}
+.menu li{margin:8px 0;}
+.menu a{color:inherit; text-decoration:none;}
+
+@media (max-width:700px){
+  :root{ --gutter:14px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="block block1">
+    <h2 style="margin:0;">Some more about</h2>
+    <div class="badge x"><h4 style="margin:0;font-size:14px;">Rock Music</h4></div>
+  </div>
+
+  <div class="block block3">
+    <div>
+      <p>The Bends (1995) took even the band’s most ardent fans by surprise. A soaring, intense
+         mix of the approaches of Nirvana and dramatic vocalist Jeff Buckley, the album’s 
+         powerful sense of alienation completely transcended the parochial issues of mid-1990s
+         Britpop. Driving rockers such as “Bones” were skillfully offset by forlorn ballads 
+          such as “High and Dry.” The widely acclaimed OK Computer (1997) was nothing short of a 
+          premillennial version of Pink Floyd’s classic album Dark Side of the Moon (1973): 
+          huge-sounding and chillingly beautiful, with Yorke’s weightless voice enveloped on 
+          masterpieces such as “Lucky” by webs of dark, dense textures. In its live performances,
+          Radiohead became one of pop music’s most compelling acts.</p>
+      <p>The pressure to follow up one of the most acclaimed recordings of the 20th century 
+        told particularly on Yorke’s fragile psyche. The band made false starts in Paris 
+        and Copenhagen before settling down back in England. When Kid A came out in October 
+        2000, it signaled that Radiohead—and Yorke above all—wanted to leave the wide-screen 
+        drama of OK Computer behind. The resulting selection of heavily electronic, more or 
+        less guitar-free pieces (notably “Kid A” and “Idioteque”) confounded many but repaid 
+        the patience of fans who stuck with it. Though the album was a commercial success, 
+        it initially met with mixed critical reaction, as would the similar Amnesiac (2001), 
+        produced during the same sessions as Kid A. But if Radiohead had seemingly disavowed 
+        its musical past on these two albums—moving away from melody and rock instrumentation
+        to create intricately textured soundscapes—it found a way to meld this approach with 
+        its guitar-band roots on the much-anticipated album Hail to the Thief (2003), which 
+        reached number three on the U.S. album charts. In 2006 Yorke, who had reluctantly 
+        become for some the voice of his generation, collaborated with the group’s modernist 
+        producer, Nigel Godrich, on a solo album, The Eraser.</p>
+    </div>
+      <ul>
+        <img src="radiohead1.jpg" alt="Radiohead фото 1" width="200">
+        <img src="radiohead2.jpg" alt="Radiohead фото 1" width="200">
+        <img src="radiohead3.jpg" alt="Radiohead фото 1" width="200">
+        <img src="radiohead4.jpg" alt="Radiohead фото 1" width="200">
+      </ul>
+  </div>
+
+  <div class="block block4">
+    <div class="badge y"><h4 style="margin:0;font-size:14px;">Rock Music</h4></div>
+    <h2 style="margin:0;">British rock group</h2>
+  </div>
+
+  <div class="gutter" aria-hidden="true"></div>
+
+  <div class="block block2">
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="block block5">
+    <p style="margin:0;">“Where words leave off, music begins”</p>
+  </div>
+</div>
+</body>
+</html>
